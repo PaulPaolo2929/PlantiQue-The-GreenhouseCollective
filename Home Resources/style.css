@@ -1,0 +1,89 @@
+/* Reset default margin, padding, and enable border-box sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; /* Set default font */
+}
+
+/* Enable smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Make each section full viewport height */
+section {
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  background-color:rgb(255, 255, 255);
+}
+
+/* Style the navigation bar inside the section */
+header nav {
+  display: flex; /* Align items in a row */
+  justify-content: space-around; /* Space elements evenly */
+  align-items: center; /* Center items vertically */
+  position: fixed; /* Fix navbar at the top */
+  right: 0;
+  left: 0;
+  background: rgb(255, 255, 255); /* Set navbar background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+  z-index: 1000; /* Keep navbar above other elements */
+}
+
+/* Style navigation menu items */
+header nav ul li {
+  display: inline-block; /* Display list items in a row */
+  margin: 15px; /* Add spacing between menu items */
+}
+
+/* Style navigation links */
+ header nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: rgb(0, 0, 0); /* Set text color to black */
+  font-size: 18px;
+}
+
+header nav ul li a::after{
+content: '';
+width: 0;
+height: 2px;
+background:green;
+display:block;
+transition: 0.2s linear;
+}
+
+header nav ul li a:hover:after{
+  width: 100%;
+}
+
+header nav ul li a:hover{
+  color: rgb(15, 150, 15);
+}
+
+header nav .icon{
+font-size: 18px;
+color: rgb(0, 0, 0);
+margin: 0 5px;
+cursor: pointer;
+transition: 0.5s;
+}
+
+header nav .icon i{
+  margin: 0 10px;
+
+}
+
+header nav .icon i:hover{
+  color:green
+}
+
+header nav .image {
+  margin:10px 0px 5px 0px;
+}
+
+main section .About #ImageAbout{
+
+  justify-content: flex-end;
+  align-items:flex-end;
+}
