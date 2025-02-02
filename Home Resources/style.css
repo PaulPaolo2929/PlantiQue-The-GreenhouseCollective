@@ -1,3 +1,10 @@
+:root {
+--primary-color:  rgb(12, 139, 12) ;
+
+}
+
+
+
 /* Reset default margin, padding, and enable border-box sizing for all elements */
 * {
   margin: 0;
@@ -86,4 +93,66 @@ main section .About #ImageAbout{
 
   justify-content: flex-end;
   align-items:flex-end;
+}
+
+.About{
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: relative;
+top: 40px;
+}
+
+
+main section .Homeimage{
+  margin: 0 20pxpx 0 0;
+
+}
+
+main section .Hometext{
+  margin: 0 0 0 100px;
+
+}
+
+#span{
+  color: rgb(12, 139, 12);
+}
+
+.Hometext h1 {
+font-family: League Spartan;
+margin-bottom: 10px;
+font-size: 40px;
+}
+
+.Hometext span {
+  font-family:  League Spartan ;
+}
+
+.Hometext p {
+margin-top: 25px;
+text-align:justify;
+}
+
+.Main-btn {
+  background:var(--primary-color);
+  position:relative ;
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 12px 23px;
+  width: 150px;
+  border-radius: 7px;
+}
+
+.Main-btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.Main-btn i{
+  color: white;
+transition: 0.2s;
+}
+
+.Main-btn:hover i{
+  transform: translateX(7px);
 }
