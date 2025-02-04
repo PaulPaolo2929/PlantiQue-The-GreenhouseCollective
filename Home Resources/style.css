@@ -151,8 +151,30 @@ text-align:justify;
 .Main-btn i{
   color: white;
 transition: 0.2s;
+
 }
 
 .Main-btn:hover i{
   transform: translateX(7px);
+}
+
+main .AboutSection {
+display: flex;
+}
+
+main .AboutSection  .Abouttext {
+margin-top: 100px;
+margin-right: 70px;
+margin-left: 60px;
+
+}
+
+main .AboutSection .AboutImage {
+  margin-left: 60px;
+}
+
+#ImageAbout {
+  border-style: solid;
+  border: 7px;
+  border-radius: 7px;
 }
